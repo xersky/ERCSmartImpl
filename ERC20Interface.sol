@@ -3,6 +3,8 @@
  * https://github.com/ethereum/ercs/blob/master/ERCS/erc-20.md
 */
 
+pragma solidity ^v0.8.24;
+
 interface ERC20Interface {
 
     //Methods
@@ -30,7 +32,7 @@ interface ERC20Interface {
     function allowance(address _owner, address _spender) public view returns (uint256 remaining);
 
     //Events
-    
+
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
