@@ -3,7 +3,7 @@
  * https://github.com/ethereum/ercs/blob/master/ERCS/erc-20.md
 */
 
-pragma solidity ^v0.8.24;
+pragma solidity ^0.8.24;
 
 interface ERC20Interface {
 
