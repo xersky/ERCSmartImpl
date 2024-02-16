@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /* ERC-20 token Standard Interface
  * Doc from:
  * https://github.com/ethereum/ercs/blob/master/ERCS/erc-20.md
@@ -12,24 +13,24 @@ interface ERC20Interface {
     //According to the documentation, name(), symbol() and decimal() methods are optional.
 
     //----------------------- OPTIONAL -----------------------\\
-    function name() public view returns (string);
+    function name() external view  returns (string memory);
 
-    function symbol() public view returns (string);
+    function symbol() external view returns (string memory);
 
-    function decimals() public view returns (uint8);
+    function decimals() external view returns (uint8);
     //--------------------------------------------------------\\
 
-    function totalSupply() public view returns (uint256);
+    function totalSupply() external view returns (uint256);
 
-    function balanceOf(address _owner) public view returns (uint256 balance);
+    function balanceOf(address _owner) external view returns (uint256 balance);
 
-    function transfer(address _to, uint256 _value) public returns (bool success);
+    function transfer(address _to, uint256 _value) external returns (bool success);
 
-    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success);
+    function transferFrom(address _from, address _to, uint256 _value) external returns (bool success);
 
-    function approve(address _spender, uint256 _value) public returns (bool success);
+    function approve(address _spender, uint256 _value) external returns (bool success);
 
-    function allowance(address _owner, address _spender) public view returns (uint256 remaining);
+    function allowance(address _owner, address _spender) external view returns (uint256 remaining);
 
     //Events
 
