@@ -6,6 +6,11 @@
 
 pragma solidity ^0.8.24;
 
+/**
+   * @title ERC20Interface
+   * @dev InterfacetDescription
+   * @custom:dev-run-script scripts/deploy_with_ethers.ts
+   */
 interface ERC20Interface {
 
     //Methods
