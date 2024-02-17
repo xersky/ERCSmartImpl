@@ -13,7 +13,7 @@ interface ERC20Interface {
     //According to the documentation, name(), symbol() and decimal() methods are optional.
 
     //----------------------- OPTIONAL -----------------------\\
-    function name() external view  returns (string memory);
+    function name() external view returns (string memory);
 
     function symbol() external view returns (string memory);
 
